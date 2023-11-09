@@ -35,7 +35,7 @@ public class WebCalculatorServer {
 			
 			if (operator.equals("+")) {
 				result = num1 + num2;
-				outToClient.writeBytes("" + result);
+				outToClient.writeBytes(result + "\n");
 			}
 			else if (operator.equals("-")) {
 				result = num1 - num2;
